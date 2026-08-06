@@ -1,0 +1,46 @@
+# Scheduled refresh: every weekday morning, fetch live data from all
+# sources, rebuild the report, and commit the refreshed cache + outputs.
+# Commits happen only when the data actually changed, so the history
+# doesn't fill up with no-op commits.
+
+name: Scheduled data refresh
+
+on:
+  schedule:
+    - cron: "30 6 * * 1-5"     # 06:30 UTC every weekday
+  workflow_dispatch: {}         # manual trigger button
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Refresh all sources & rebuild report
+        env:
+          # optional secrets — pipeline runs fine without them
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          MACRO_PULSE_SLACK_WEBHOOK: ${{ secrets.MACRO_PULSE_SLACK_WEBHOOK }}
+          MACRO_PULSE_TG_TOKEN: ${{ secrets.MACRO_PULSE_TG_TOKEN }}
+          MACRO_PULSE_TG_CHAT: ${{ secrets.MACRO_PULSE_TG_CHAT }}
+        run: python run_monitor.py --refresh
+
+      - name: Commit refreshed data (only if changed)
+        run: |
+          git config user.name  "macro-pulse-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/ outputs/
+          if git diff --cached --quiet; then
+            echo "No data changes today — nothing to commit."
+          else
+            git commit -m "data: scheduled refresh $(date -u +%F)"
+            git push
+          fi

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.DS_Store
+
+# DuckDB write-ahead log — transient, only history.duckdb itself is tracked
+*.wal
+
+outputs/logs/
+outputs/test_chart.png
+.DS_Store

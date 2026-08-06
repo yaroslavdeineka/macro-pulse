@@ -1,0 +1,5 @@
+# optional layers — not needed for the core pipeline or tests
+streamlit        # app/streamlit_app.py
+fastapi          # api/main.py
+uvicorn
+mypy             # type checking in CI

@@ -1,0 +1,50 @@
+# Macro Pulse configuration — edit here, not in code.
+# Every module reads this file via src/config.py.
+
+countries: [USA, GBR, DEU, POL, UKR, JPN, FRA, ITA, ESP, TUR]
+
+fx_currencies: [USD, GBP, CHF, JPY, PLN, SEK, NOK, CZK, HUF, TRY]
+
+# Calendar years of US Treasury daily par yield curves to load.
+treasury_years: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]
+
+# Start dates / ranges per source
+fx_start: "2015-01-01"
+wb_range: "1990:2026"
+eurostat_periods: 120          # months of HICP history
+boe_date_from: "01/Jan/2000"
+
+# World Bank indicators: code -> [short_name, stress_sign]
+# stress_sign: +1 high = stress, -1 low = stress, 0 = informational only
+wb_indicators:
+  FP.CPI.TOTL.ZG:      [inflation_pct, 1]
+  NY.GDP.MKTP.KD.ZG:   [gdp_growth_pct, -1]
+  SL.UEM.TOTL.ZS:      [unemployment_pct, 1]
+  GC.DOD.TOTL.GD.ZS:   [govt_debt_gdp_pct, 1]
+  BN.CAB.XOKA.GD.ZS:   [current_account_gdp_pct, -1]
+  FR.INR.RINR:         [real_interest_pct, 0]
+
+analytics:
+  inversion_min_days: 3
+  fx_vol_window: 30
+  event_window_days: 3
+  nowcast_horizon_days: 5
+  backtest_duration_years: 9.0   # modified duration proxy for the 10Y note
+
+thresholds:
+  stress_alert: 1.0              # alert when any country's stress index crosses this
+  inversion_alert: true          # alert when a NEW inversion episode appears
+
+history:
+  enabled: true
+  db_path: data/history.duckdb
+
+alerts:
+  slack_webhook_env: MACRO_PULSE_SLACK_WEBHOOK      # set the env var to enable
+  telegram_token_env: MACRO_PULSE_TG_TOKEN
+  telegram_chat_env: MACRO_PULSE_TG_CHAT
+
+# Optional key-required sources (never used unless the env var is set)
+fred:
+  api_key_env: FRED_API_KEY
+  series: [FEDFUNDS, CPIAUCSL, INDPRO, ICSA, UNRATE]
