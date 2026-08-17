@@ -12731,4 +12731,13 @@
 ,{ 
 "exchangedate":"14.08.2026","r030":840,"cc":"USD","txt":"Долар США","enname":"US Dollar","rate":44.6988,"units":1,"rate_per_unit":44.6988,"group":"1","calcdate":"13.08.2026","special":"N"
  }
+,{ 
+"exchangedate":"15.08.2026","r030":840,"cc":"USD","txt":"Долар США","enname":"US Dollar","rate":44.6988,"units":1,"rate_per_unit":44.6988,"group":"1","calcdate":"13.08.2026","special":"N"
+ }
+,{ 
+"exchangedate":"16.08.2026","r030":840,"cc":"USD","txt":"Долар США","enname":"US Dollar","rate":44.6988,"units":1,"rate_per_unit":44.6988,"group":"1","calcdate":"13.08.2026","special":"N"
+ }
+,{ 
+"exchangedate":"17.08.2026","r030":840,"cc":"USD","txt":"Долар США","enname":"US Dollar","rate":44.7061,"units":1,"rate_per_unit":44.7061,"group":"1","calcdate":"14.08.2026","special":"N"
+ }
 ]
