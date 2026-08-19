@@ -12743,4 +12743,7 @@
 ,{ 
 "exchangedate":"18.08.2026","r030":840,"cc":"USD","txt":"Долар США","enname":"US Dollar","rate":44.6938,"units":1,"rate_per_unit":44.6938,"group":"1","calcdate":"17.08.2026","special":"N"
  }
+,{ 
+"exchangedate":"19.08.2026","r030":840,"cc":"USD","txt":"Долар США","enname":"US Dollar","rate":44.7756,"units":1,"rate_per_unit":44.7756,"group":"1","calcdate":"18.08.2026","special":"N"
+ }
 ]
