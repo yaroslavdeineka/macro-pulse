@@ -1,14 +1,14 @@
 # Macro Pulse — monitor report
 
 ## US Treasury yield curve
-*Source: U.S. Department of the Treasury — daily par yield curve (2015-01-02 → 2026-08-28, 2916 trading days)*
+*Source: U.S. Department of the Treasury — daily par yield curve (2015-01-02 → 2026-08-31, 2917 trading days)*
 
 ![Yield curve](yield_curve.png)
 
 ![Curve surface](curve_heatmap.png)
 
-- Latest 10Y−3M spread: **83 bp**
-- Latest 10Y−2Y spread: **39 bp**
+- Latest 10Y−3M spread: **84 bp**
+- Latest 10Y−2Y spread: **41 bp**
 
 **Inversion episodes detected (10Y−3M):**
 
@@ -56,7 +56,7 @@
 | TRY        |  2985 | 2015-01-02 | 2026-08-31 |       55.9648 |             1875.32 |              4.46 |             -36.87 |           2.42 |
 | USD        |  2985 | 2015-01-02 | 2026-08-31 |        1.1596 |               -3.71 |              4.29 |             -23.44 |           0.72 |
 
-- ECB deposit facility rate (latest): **2.25%** as of 2026-08-31
+- ECB deposit facility rate (latest): **2.25%** as of 2026-09-01
 
 ## Cross-country macro scorecard
 *Source: World Bank — World Development Indicators (1990:2026); z-scores vs each country's own history*
@@ -81,17 +81,17 @@
 
 ![Policy rates](policy_rates.png)
 
-- Latest Bank Rate: **3.75%** as of 2026-08-27 (6735 observations since 2000-01-04)
+- Latest Bank Rate: **3.75%** as of 2026-08-28 (6736 observations since 2000-01-04)
 
 ## IMF monthly CPI (second SDMX provider)
 *Source: IMF Data (data.imf.org), CPI dataset — monthly headline CPI index*
 
 | geo   |   cpi_yoy_pct | as_of      |
 |:------|--------------:|:-----------|
-| DEU   |           2.3 | 2026-06-01 |
+| DEU   |           2.8 | 2026-07-01 |
 | ESP   |           3.6 | 2026-07-01 |
-| FRA   |           1.8 | 2026-06-01 |
-| GBR   |           2.8 | 2026-06-01 |
+| FRA   |           2.1 | 2026-07-01 |
+| GBR   |           3   | 2026-07-01 |
 | ITA   |           2.9 | 2026-07-01 |
 | JPN   |           1.7 | 2026-06-01 |
 | POL   |           3   | 2026-06-01 |
@@ -207,8 +207,8 @@
 
 **10Y-3M spread — illustrative 5-step nowcast** (Holt exponential smoothing):
 
-- last actual: **83.0 bp** (2026-08-28)
-- 5-step forecast: **83.57 bp** (95% band 51.81 … 115.33)
+- last actual: **84.0 bp** (2026-08-31)
+- 5-step forecast: **84.24 bp** (95% band 52.49 … 116.0)
 - in-sample RMSE 7.25 vs naive-model RMSE 5.4 — the smoother barely beats naive; treat as illustrative.
 
 *Not a trading model — a workflow demo with an explicit naive benchmark.*
@@ -245,11 +245,11 @@
 
 |                        |   CAGR_pct |   ann_vol_pct |   sharpe |   max_drawdown_pct |   total_return_pct |
 |:-----------------------|-----------:|--------------:|---------:|-------------------:|-------------------:|
-| curve-signal strategy  |       1.02 |          6    |     0.2  |             -25.28 |              12.51 |
-| buy & hold 10Y (proxy) |       0.43 |          7.57 |     0.09 |             -28.61 |               5.05 |
-| cash (3M bills)        |       2.17 |          0.12 |    17.33 |               0    |              28.15 |
+| curve-signal strategy  |       1.01 |          6    |     0.2  |             -25.28 |              12.33 |
+| buy & hold 10Y (proxy) |       0.41 |          7.57 |     0.09 |             -28.61 |               4.88 |
+| cash (3M bills)        |       2.17 |          0.12 |    17.33 |               0    |              28.17 |
 
-- Sample: 2915 trading days; time in cash: **25.3%**
+- Sample: 2916 trading days; time in cash: **25.3%**
 
 ## Real (PPP-adjusted) exchange rates
 *ECB nominal rates deflated by relative CPI (World Bank), Germany as euro-area proxy. The gap between nominal and real change is the two economies' inflation differential.*
@@ -281,7 +281,7 @@
 | Japan          |               nan   |              1.2 |                 1   |           -0.2 | g>r — growing out             |
 
 ## Run history (DuckDB)
-*22 metrics appended this run; 31 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
+*22 metrics appended this run; 32 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
 
 ![Stress history](stress_history.png)
 
