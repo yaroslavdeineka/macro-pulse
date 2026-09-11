@@ -1,14 +1,14 @@
 # Macro Pulse — monitor report
 
 ## US Treasury yield curve
-*Source: U.S. Department of the Treasury — daily par yield curve (2015-01-02 → 2026-09-09, 2923 trading days)*
+*Source: U.S. Department of the Treasury — daily par yield curve (2015-01-02 → 2026-09-10, 2924 trading days)*
 
 ![Yield curve](yield_curve.png)
 
 ![Curve surface](curve_heatmap.png)
 
-- Latest 10Y−3M spread: **88 bp**
-- Latest 10Y−2Y spread: **40 bp**
+- Latest 10Y−3M spread: **95 bp**
+- Latest 10Y−2Y spread: **39 bp**
 
 **Inversion episodes detected (10Y−3M):**
 
@@ -45,18 +45,18 @@
 
 | currency   |   obs | first      | last       |   latest_rate |   period_change_pct |   ann_vol_30d_pct |   max_drawdown_pct |   level_zscore |
 |:-----------|------:|:-----------|:-----------|--------------:|--------------------:|------------------:|-------------------:|---------------:|
-| CHF        |  2992 | 2015-01-02 | 2026-09-09 |        0.9404 |              -21.78 |              3.39 |             -25.07 |          -1.34 |
-| CZK        |  2992 | 2015-01-02 | 2026-09-09 |       24.247  |              -12.44 |              1.8  |             -18.07 |          -1.25 |
-| GBP        |  2992 | 2015-01-02 | 2026-09-09 |        0.859  |               10.13 |              2.01 |             -11.4  |           0.16 |
-| HUF        |  2992 | 2015-01-02 | 2026-09-09 |      363.95   |               14.18 |              6.92 |             -18.84 |           0.36 |
-| JPY        |  2992 | 2015-01-02 | 2026-09-09 |      178.59   |               22.99 |             10.12 |             -23.44 |           1.95 |
-| NOK        |  2992 | 2015-01-02 | 2026-09-09 |       10.6975 |               18.31 |              3.58 |             -22.93 |           0.41 |
-| PLN        |  2992 | 2015-01-02 | 2026-09-09 |        4.3153 |                0.23 |              3.41 |             -16.59 |          -0.33 |
-| SEK        |  2992 | 2015-01-02 | 2026-09-09 |       11.1495 |               17.73 |              3.85 |             -12.24 |           1    |
-| TRY        |  2992 | 2015-01-02 | 2026-09-09 |       56.4857 |             1893.71 |              4.5  |             -36.87 |           2.44 |
-| USD        |  2992 | 2015-01-02 | 2026-09-09 |        1.1652 |               -3.25 |              4.3  |             -23.44 |           0.83 |
+| CHF        |  2993 | 2015-01-02 | 2026-09-10 |        0.9432 |              -21.54 |              3.46 |             -25.07 |          -1.3  |
+| CZK        |  2993 | 2015-01-02 | 2026-09-10 |       24.251  |              -12.43 |              1.77 |             -18.07 |          -1.25 |
+| GBP        |  2993 | 2015-01-02 | 2026-09-10 |        0.8591 |               10.15 |              1.99 |             -11.4  |           0.16 |
+| HUF        |  2993 | 2015-01-02 | 2026-09-10 |      364.75   |               14.43 |              6.93 |             -18.84 |           0.38 |
+| JPY        |  2993 | 2015-01-02 | 2026-09-10 |      179.09   |               23.33 |             10.07 |             -23.44 |           1.97 |
+| NOK        |  2993 | 2015-01-02 | 2026-09-10 |       10.7635 |               19.04 |              4.11 |             -22.93 |           0.47 |
+| PLN        |  2993 | 2015-01-02 | 2026-09-10 |        4.322  |                0.39 |              3.17 |             -16.59 |          -0.29 |
+| SEK        |  2993 | 2015-01-02 | 2026-09-10 |       11.1995 |               18.26 |              3.82 |             -12.24 |           1.07 |
+| TRY        |  2993 | 2015-01-02 | 2026-09-10 |       56.3316 |             1888.27 |              4.12 |             -36.87 |           2.42 |
+| USD        |  2993 | 2015-01-02 | 2026-09-10 |        1.1616 |               -3.55 |              3.79 |             -23.44 |           0.76 |
 
-- ECB deposit facility rate (latest): **2.25%** as of 2026-09-10
+- ECB deposit facility rate (latest): **2.25%** as of 2026-09-11
 
 ## Cross-country macro scorecard
 *Source: World Bank — World Development Indicators (1990:2026); z-scores vs each country's own history*
@@ -81,7 +81,7 @@
 
 ![Policy rates](policy_rates.png)
 
-- Latest Bank Rate: **3.75%** as of 2026-09-09 (6743 observations since 2000-01-04)
+- Latest Bank Rate: **3.75%** as of 2026-09-10 (6744 observations since 2000-01-04)
 
 ## IMF monthly CPI (second SDMX provider)
 *Source: IMF Data (data.imf.org), CPI dataset — monthly headline CPI index*
@@ -150,7 +150,7 @@
 ## National Bank of Ukraine
 *Source: NBU open data API — official UAH/USD rate. The one economy in the panel under acute stress, so it anchors the high end of the stress-index scale.*
 
-- Latest official UAH/USD: **44.65** as of 2026-09-10 (4271 observations since 2015-01-01)
+- Latest official UAH/USD: **44.55** as of 2026-09-11 (4272 observations since 2015-01-01)
 - Money supply M3: **+15.8% YoY** as of 2026-08-01
 
 ![Ukraine](nbu_ukraine.png)
@@ -207,15 +207,15 @@
 
 **10Y-3M spread — illustrative 5-step nowcast** (Holt exponential smoothing):
 
-- last actual: **88.0 bp** (2026-09-09)
-- 5-step forecast: **89.67 bp** (95% band 57.95 … 121.4)
+- last actual: **95.0 bp** (2026-09-10)
+- 5-step forecast: **93.25 bp** (95% band 61.53 … 124.97)
 - in-sample RMSE 7.24 vs naive-model RMSE 5.39 — the smoother barely beats naive; treat as illustrative.
 
 *Not a trading model — a workflow demo with an explicit naive benchmark.*
 
 **EUR/USD — illustrative 5-step nowcast** (Holt exponential smoothing):
 
-- last actual: **1.17 ** (2026-09-09)
+- last actual: **1.16 ** (2026-09-10)
 - 5-step forecast: **1.16 ** (95% band 1.13 … 1.2)
 - in-sample RMSE 0.01 vs naive-model RMSE 0.01 — the smoother barely beats naive; treat as illustrative.
 
@@ -245,11 +245,11 @@
 
 |                        |   CAGR_pct |   ann_vol_pct |   sharpe |   max_drawdown_pct |   total_return_pct |
 |:-----------------------|-----------:|--------------:|---------:|-------------------:|-------------------:|
-| curve-signal strategy  |       0.95 |          6    |     0.19 |             -25.28 |              11.65 |
-| buy & hold 10Y (proxy) |       0.36 |          7.56 |     0.09 |             -28.61 |               4.24 |
-| cash (3M bills)        |       2.17 |          0.12 |    17.37 |               0    |              28.29 |
+| curve-signal strategy  |       0.86 |          6.01 |     0.17 |             -25.28 |              10.47 |
+| buy & hold 10Y (proxy) |       0.27 |          7.57 |     0.07 |             -28.61 |               3.14 |
+| cash (3M bills)        |       2.17 |          0.12 |    17.37 |               0    |              28.31 |
 
-- Sample: 2922 trading days; time in cash: **25.3%**
+- Sample: 2923 trading days; time in cash: **25.2%**
 
 ## Real (PPP-adjusted) exchange rates
 *ECB nominal rates deflated by relative CPI (World Bank), Germany as euro-area proxy. The gap between nominal and real change is the two economies' inflation differential.*
@@ -281,7 +281,7 @@
 | Japan          |               nan   |              1.2 |                 1   |           -0.2 | g>r — growing out             |
 
 ## Run history (DuckDB)
-*22 metrics appended this run; 39 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
+*22 metrics appended this run; 40 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
 
 ![Stress history](stress_history.png)
 
