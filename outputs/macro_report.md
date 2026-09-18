@@ -1,13 +1,13 @@
 # Macro Pulse — monitor report
 
 ## US Treasury yield curve
-*Source: U.S. Department of the Treasury — daily par yield curve (2015-01-02 → 2026-09-16, 2928 trading days)*
+*Source: U.S. Department of the Treasury — daily par yield curve (2015-01-02 → 2026-09-17, 2929 trading days)*
 
 ![Yield curve](yield_curve.png)
 
 ![Curve surface](curve_heatmap.png)
 
-- Latest 10Y−3M spread: **87 bp**
+- Latest 10Y−3M spread: **82 bp**
 - Latest 10Y−2Y spread: **27 bp**
 
 **Inversion episodes detected (10Y−3M):**
@@ -45,18 +45,18 @@
 
 | currency   |   obs | first      | last       |   latest_rate |   period_change_pct |   ann_vol_30d_pct |   max_drawdown_pct |   level_zscore |
 |:-----------|------:|:-----------|:-----------|--------------:|--------------------:|------------------:|-------------------:|---------------:|
-| CHF        |  2997 | 2015-01-02 | 2026-09-16 |        0.9449 |              -21.4  |              3.4  |             -25.07 |          -1.28 |
-| CZK        |  2997 | 2015-01-02 | 2026-09-16 |       24.313  |              -12.21 |              1.73 |             -18.07 |          -1.19 |
-| GBP        |  2997 | 2015-01-02 | 2026-09-16 |        0.8574 |                9.92 |              2.15 |             -11.4  |           0.12 |
-| HUF        |  2997 | 2015-01-02 | 2026-09-16 |      364.45   |               14.34 |              6.7  |             -18.84 |           0.37 |
-| JPY        |  2997 | 2015-01-02 | 2026-09-16 |      178.88   |               23.19 |              7.34 |             -23.44 |           1.95 |
-| NOK        |  2997 | 2015-01-02 | 2026-09-16 |       10.7885 |               19.32 |              3.82 |             -22.93 |           0.5  |
-| PLN        |  2997 | 2015-01-02 | 2026-09-16 |        4.3473 |                0.98 |              3.28 |             -16.59 |          -0.14 |
-| SEK        |  2997 | 2015-01-02 | 2026-09-16 |       11.2875 |               19.19 |              3.79 |             -12.24 |           1.19 |
-| TRY        |  2997 | 2015-01-02 | 2026-09-16 |       56.136  |             1881.36 |              3.99 |             -36.87 |           2.4  |
-| USD        |  2997 | 2015-01-02 | 2026-09-16 |        1.1537 |               -4.2  |              3.66 |             -23.44 |           0.61 |
+| CHF        |  2998 | 2015-01-02 | 2026-09-17 |        0.9466 |              -21.26 |              3.43 |             -25.07 |          -1.25 |
+| CZK        |  2998 | 2015-01-02 | 2026-09-17 |       24.308  |              -12.22 |              1.73 |             -18.07 |          -1.19 |
+| GBP        |  2998 | 2015-01-02 | 2026-09-17 |        0.8583 |               10.04 |              2.17 |             -11.4  |           0.14 |
+| HUF        |  2998 | 2015-01-02 | 2026-09-17 |      362.98   |               13.88 |              6.67 |             -18.84 |           0.33 |
+| JPY        |  2998 | 2015-01-02 | 2026-09-17 |      178.75   |               23.1  |              7.34 |             -23.44 |           1.95 |
+| NOK        |  2998 | 2015-01-02 | 2026-09-17 |       10.825  |               19.72 |              3.95 |             -22.93 |           0.54 |
+| PLN        |  2998 | 2015-01-02 | 2026-09-17 |        4.358  |                1.22 |              3.29 |             -16.59 |          -0.07 |
+| SEK        |  2998 | 2015-01-02 | 2026-09-17 |       11.2715 |               19.02 |              3.61 |             -12.24 |           1.17 |
+| TRY        |  2998 | 2015-01-02 | 2026-09-17 |       55.8841 |             1872.47 |              4.25 |             -36.87 |           2.38 |
+| USD        |  2998 | 2015-01-02 | 2026-09-17 |        1.1481 |               -4.67 |              3.91 |             -23.44 |           0.5  |
 
-- ECB deposit facility rate (latest): **2.50%** as of 2026-09-17
+- ECB deposit facility rate (latest): **2.50%** as of 2026-09-18
 
 ## Cross-country macro scorecard
 *Source: World Bank — World Development Indicators (1990:2026); z-scores vs each country's own history*
@@ -81,22 +81,22 @@
 
 ![Policy rates](policy_rates.png)
 
-- Latest Bank Rate: **3.75%** as of 2026-09-16 (6748 observations since 2000-01-04)
+- Latest Bank Rate: **3.75%** as of 2026-09-17 (6749 observations since 2000-01-04)
 
 ## IMF monthly CPI (second SDMX provider)
 *Source: IMF Data (data.imf.org), CPI dataset — monthly headline CPI index*
 
 | geo   |   cpi_yoy_pct | as_of      |
 |:------|--------------:|:-----------|
-| DEU   |           2.8 | 2026-07-01 |
-| ESP   |           3.6 | 2026-07-01 |
-| FRA   |           2.1 | 2026-07-01 |
+| DEU   |           2.9 | 2026-08-01 |
+| ESP   |           4.3 | 2026-08-01 |
+| FRA   |           2.4 | 2026-08-01 |
 | GBR   |           3   | 2026-07-01 |
 | ITA   |           2.9 | 2026-07-01 |
 | JPN   |           1.7 | 2026-06-01 |
 | POL   |           3   | 2026-06-01 |
-| TUR   |          31.8 | 2026-07-01 |
-| UKR   |           7.7 | 2026-07-01 |
+| TUR   |          31.5 | 2026-08-01 |
+| UKR   |           8.1 | 2026-08-01 |
 | USA   |           3.5 | 2026-07-01 |
 
 ## Eurostat monthly HICP — European inflation at monthly resolution
@@ -150,7 +150,7 @@
 ## National Bank of Ukraine
 *Source: NBU open data API — official UAH/USD rate. The one economy in the panel under acute stress, so it anchors the high end of the stress-index scale.*
 
-- Latest official UAH/USD: **44.60** as of 2026-09-17 (4278 observations since 2015-01-01)
+- Latest official UAH/USD: **44.66** as of 2026-09-18 (4279 observations since 2015-01-01)
 - Money supply M3: **+15.8% YoY** as of 2026-08-01
 
 ![Ukraine](nbu_ukraine.png)
@@ -208,16 +208,16 @@
 
 **10Y-3M spread — illustrative 5-step nowcast** (Holt exponential smoothing):
 
-- last actual: **87.0 bp** (2026-09-16)
-- 5-step forecast: **90.69 bp** (95% band 58.99 … 122.4)
+- last actual: **82.0 bp** (2026-09-17)
+- 5-step forecast: **87.69 bp** (95% band 55.98 … 119.39)
 - in-sample RMSE 7.23 vs naive-model RMSE 5.39 — the smoother barely beats naive; treat as illustrative.
 
 *Not a trading model — a workflow demo with an explicit naive benchmark.*
 
 **EUR/USD — illustrative 5-step nowcast** (Holt exponential smoothing):
 
-- last actual: **1.15 ** (2026-09-16)
-- 5-step forecast: **1.15 ** (95% band 1.12 … 1.19)
+- last actual: **1.15 ** (2026-09-17)
+- 5-step forecast: **1.15 ** (95% band 1.12 … 1.18)
 - in-sample RMSE 0.01 vs naive-model RMSE 0.01 — the smoother barely beats naive; treat as illustrative.
 
 *Not a trading model — a workflow demo with an explicit naive benchmark.*
@@ -246,11 +246,11 @@
 
 |                        |   CAGR_pct |   ann_vol_pct |   sharpe |   max_drawdown_pct |   total_return_pct |
 |:-----------------------|-----------:|--------------:|---------:|-------------------:|-------------------:|
-| curve-signal strategy  |       0.82 |          6    |     0.17 |             -25.28 |               9.96 |
-| buy & hold 10Y (proxy) |       0.23 |          7.56 |     0.07 |             -28.61 |               2.66 |
-| cash (3M bills)        |       2.17 |          0.12 |    17.39 |               0    |              28.39 |
+| curve-signal strategy  |       0.88 |          6.01 |     0.18 |             -25.28 |              10.67 |
+| buy & hold 10Y (proxy) |       0.28 |          7.56 |     0.08 |             -28.61 |               3.33 |
+| cash (3M bills)        |       2.18 |          0.12 |    17.4  |               0    |              28.41 |
 
-- Sample: 2927 trading days; time in cash: **25.2%**
+- Sample: 2928 trading days; time in cash: **25.2%**
 
 ## Real (PPP-adjusted) exchange rates
 *ECB nominal rates deflated by relative CPI (World Bank), Germany as euro-area proxy. The gap between nominal and real change is the two economies' inflation differential.*
@@ -282,7 +282,7 @@
 | Japan          |               nan   |              1.2 |                 1   |           -0.2 | g>r — growing out             |
 
 ## Run history (DuckDB)
-*22 metrics appended this run; 44 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
+*22 metrics appended this run; 45 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
 
 ![Stress history](stress_history.png)
 
