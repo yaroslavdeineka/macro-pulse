@@ -12857,4 +12857,16 @@
 ,{ 
 "exchangedate":"25.09.2026","r030":840,"cc":"USD","txt":"Долар США","enname":"US Dollar","rate":44.9729,"units":1,"rate_per_unit":44.9729,"group":"1","calcdate":"24.09.2026","special":"N"
  }
+,{ 
+"exchangedate":"26.09.2026","r030":840,"cc":"USD","txt":"Долар США","enname":"US Dollar","rate":44.9729,"units":1,"rate_per_unit":44.9729,"group":"1","calcdate":"24.09.2026","special":"N"
+ }
+,{ 
+"exchangedate":"27.09.2026","r030":840,"cc":"USD","txt":"Долар США","enname":"US Dollar","rate":44.9729,"units":1,"rate_per_unit":44.9729,"group":"1","calcdate":"24.09.2026","special":"N"
+ }
+,{ 
+"exchangedate":"28.09.2026","r030":840,"cc":"USD","txt":"Долар США","enname":"US Dollar","rate":44.8414,"units":1,"rate_per_unit":44.8414,"group":"1","calcdate":"25.09.2026","special":"N"
+ }
+,{ 
+"exchangedate":"29.09.2026","r030":840,"cc":"USD","txt":"Долар США","enname":"US Dollar","rate":44.8153,"units":1,"rate_per_unit":44.8153,"group":"1","calcdate":"28.09.2026","special":"N"
+ }
 ]
