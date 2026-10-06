@@ -1,14 +1,14 @@
 # Macro Pulse — monitor report
 
 ## US Treasury yield curve
-*Source: U.S. Department of the Treasury — daily par yield curve (2015-01-02 → 2026-10-02, 2940 trading days)*
+*Source: U.S. Department of the Treasury — daily par yield curve (2015-01-02 → 2026-10-05, 2941 trading days)*
 
 ![Yield curve](yield_curve.png)
 
 ![Curve surface](curve_heatmap.png)
 
 - Latest 10Y−3M spread: **109 bp**
-- Latest 10Y−2Y spread: **45 bp**
+- Latest 10Y−2Y spread: **47 bp**
 
 **Inversion episodes detected (10Y−3M):**
 
@@ -56,7 +56,7 @@
 | TRY        |  3010 | 2015-01-02 | 2026-10-05 |       55.0755 |             1843.93 |              4.14 |             -36.87 |           2.3  |
 | USD        |  3010 | 2015-01-02 | 2026-10-05 |        1.1204 |               -6.97 |              3.98 |             -23.44 |          -0.04 |
 
-- ECB deposit facility rate (latest): **2.50%** as of 2026-10-05
+- ECB deposit facility rate (latest): **2.50%** as of 2026-10-06
 
 ## Cross-country macro scorecard
 *Source: World Bank — World Development Indicators (1990:2026); z-scores vs each country's own history*
@@ -81,7 +81,7 @@
 
 ![Policy rates](policy_rates.png)
 
-- Latest Bank Rate: **3.75%** as of 2026-10-02 (6760 observations since 2000-01-04)
+- Latest Bank Rate: **3.75%** as of 2026-10-05 (6761 observations since 2000-01-04)
 
 ## IMF monthly CPI (second SDMX provider)
 *Source: IMF Data (data.imf.org), CPI dataset — monthly headline CPI index*
@@ -150,7 +150,7 @@
 ## National Bank of Ukraine
 *Source: NBU open data API — official UAH/USD rate. The one economy in the panel under acute stress, so it anchors the high end of the stress-index scale.*
 
-- Latest official UAH/USD: **45.06** as of 2026-10-06 (4297 observations since 2015-01-01)
+- Latest official UAH/USD: **44.95** as of 2026-10-07 (4298 observations since 2015-01-01)
 - Money supply M3: **+15.6% YoY** as of 2026-09-01
 
 ![Ukraine](nbu_ukraine.png)
@@ -209,9 +209,9 @@
 
 **10Y-3M spread — illustrative 5-step nowcast** (Holt exponential smoothing):
 
-- last actual: **109.0 bp** (2026-10-02)
-- 5-step forecast: **113.21 bp** (95% band 81.5 … 144.92)
-- in-sample RMSE 7.24 vs naive-model RMSE 5.39 — the smoother barely beats naive; treat as illustrative.
+- last actual: **109.0 bp** (2026-10-05)
+- 5-step forecast: **115.58 bp** (95% band 83.87 … 147.28)
+- in-sample RMSE 7.23 vs naive-model RMSE 5.39 — the smoother barely beats naive; treat as illustrative.
 
 *Not a trading model — a workflow demo with an explicit naive benchmark.*
 
@@ -247,11 +247,11 @@
 
 |                        |   CAGR_pct |   ann_vol_pct |   sharpe |   max_drawdown_pct |   total_return_pct |
 |:-----------------------|-----------:|--------------:|---------:|-------------------:|-------------------:|
-| curve-signal strategy  |       0.63 |          6.02 |     0.13 |             -25.28 |               7.56 |
-| buy & hold 10Y (proxy) |       0.04 |          7.57 |     0.04 |             -28.61 |               0.42 |
-| cash (3M bills)        |       2.18 |          0.12 |    17.46 |               0    |              28.64 |
+| curve-signal strategy  |       0.6  |          6.02 |     0.13 |             -25.28 |               7.29 |
+| buy & hold 10Y (proxy) |       0.01 |          7.57 |     0.04 |             -28.61 |               0.17 |
+| cash (3M bills)        |       2.18 |          0.12 |    17.46 |               0    |              28.67 |
 
-- Sample: 2939 trading days; time in cash: **25.1%**
+- Sample: 2940 trading days; time in cash: **25.1%**
 
 ## Real (PPP-adjusted) exchange rates
 *ECB nominal rates deflated by relative CPI (World Bank), Germany as euro-area proxy. The gap between nominal and real change is the two economies' inflation differential.*
@@ -283,7 +283,7 @@
 | Japan          |               nan   |              1.2 |                 1   |           -0.2 | g>r — growing out             |
 
 ## Run history (DuckDB)
-*22 metrics appended this run; 56 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
+*22 metrics appended this run; 57 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
 
 ![Stress history](stress_history.png)
 
