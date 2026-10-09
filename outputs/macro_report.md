@@ -1,14 +1,14 @@
 # Macro Pulse — monitor report
 
 ## US Treasury yield curve
-*Source: U.S. Department of the Treasury — daily par yield curve (2015-01-02 → 2026-10-07, 2943 trading days)*
+*Source: U.S. Department of the Treasury — daily par yield curve (2015-01-02 → 2026-10-08, 2944 trading days)*
 
 ![Yield curve](yield_curve.png)
 
 ![Curve surface](curve_heatmap.png)
 
-- Latest 10Y−3M spread: **106 bp**
-- Latest 10Y−2Y spread: **51 bp**
+- Latest 10Y−3M spread: **99 bp**
+- Latest 10Y−2Y spread: **47 bp**
 
 **Inversion episodes detected (10Y−3M):**
 
@@ -45,18 +45,18 @@
 
 | currency   |   obs | first      | last       |   latest_rate |   period_change_pct |   ann_vol_30d_pct |   max_drawdown_pct |   level_zscore |
 |:-----------|------:|:-----------|:-----------|--------------:|--------------------:|------------------:|-------------------:|---------------:|
-| CHF        |  3012 | 2015-01-02 | 2026-10-07 |        0.9309 |              -22.57 |              6.52 |             -25.07 |          -1.45 |
-| CZK        |  3012 | 2015-01-02 | 2026-10-07 |       24.427  |              -11.79 |              1.85 |             -18.07 |          -1.08 |
-| GBP        |  3012 | 2015-01-02 | 2026-10-07 |        0.8465 |                8.52 |              2.93 |             -11.4  |          -0.11 |
-| HUF        |  3012 | 2015-01-02 | 2026-10-07 |      366.75   |               15.06 |              7.49 |             -18.84 |           0.44 |
-| JPY        |  3012 | 2015-01-02 | 2026-10-07 |      176.85   |               21.79 |              8.71 |             -23.44 |           1.83 |
-| NOK        |  3012 | 2015-01-02 | 2026-10-07 |       10.712  |               18.47 |              4.83 |             -22.93 |           0.42 |
-| PLN        |  3012 | 2015-01-02 | 2026-10-07 |        4.3825 |                1.79 |              3.96 |             -16.59 |           0.07 |
-| SEK        |  3012 | 2015-01-02 | 2026-10-07 |       11.224  |               18.52 |              3.81 |             -12.24 |           1.09 |
-| TRY        |  3012 | 2015-01-02 | 2026-10-07 |       54.9822 |             1840.64 |              5.05 |             -36.87 |           2.29 |
-| USD        |  3012 | 2015-01-02 | 2026-10-07 |        1.1177 |               -7.19 |              4.89 |             -23.44 |          -0.09 |
+| CHF        |  3013 | 2015-01-02 | 2026-10-08 |        0.9326 |              -22.43 |              6.55 |             -25.07 |          -1.43 |
+| CZK        |  3013 | 2015-01-02 | 2026-10-08 |       24.403  |              -11.88 |              1.81 |             -18.07 |          -1.1  |
+| GBP        |  3013 | 2015-01-02 | 2026-10-08 |        0.847  |                8.59 |              2.89 |             -11.4  |          -0.1  |
+| HUF        |  3013 | 2015-01-02 | 2026-10-08 |      366.25   |               14.9  |              6.91 |             -18.84 |           0.42 |
+| JPY        |  3013 | 2015-01-02 | 2026-10-08 |      177.05   |               21.93 |              8.74 |             -23.44 |           1.84 |
+| NOK        |  3013 | 2015-01-02 | 2026-10-08 |       10.717  |               18.52 |              4.84 |             -22.93 |           0.42 |
+| PLN        |  3013 | 2015-01-02 | 2026-10-08 |        4.3753 |                1.63 |              3.49 |             -16.59 |           0.03 |
+| SEK        |  3013 | 2015-01-02 | 2026-10-08 |       11.194  |               18.2  |              3.91 |             -12.24 |           1.05 |
+| TRY        |  3013 | 2015-01-02 | 2026-10-08 |       55.0523 |             1843.11 |              5.07 |             -36.87 |           2.29 |
+| USD        |  3013 | 2015-01-02 | 2026-10-08 |        1.1186 |               -7.12 |              4.92 |             -23.44 |          -0.07 |
 
-- ECB deposit facility rate (latest): **2.50%** as of 2026-10-08
+- ECB deposit facility rate (latest): **2.50%** as of 2026-10-09
 
 ## Cross-country macro scorecard
 *Source: World Bank — World Development Indicators (1990:2026); z-scores vs each country's own history*
@@ -65,23 +65,23 @@
 
 | country        |   gdp_growth_pct |   inflation_pct |   unemployment_pct |   govt_debt_gdp_pct |   stress_index |
 |:---------------|-----------------:|----------------:|-------------------:|--------------------:|---------------:|
-| Ukraine        |             1.82 |           12.73 |               9.83 |               58.72 |           0.44 |
-| United States  |             2.16 |            2.95 |               4.2  |              115.77 |           0.3  |
-| United Kingdom |             1.39 |            3.88 |               4.75 |              130.74 |           0.08 |
-| Germany        |             0.24 |            2.17 |               3.71 |               20.85 |          -0.08 |
+| Ukraine        |             1.82 |           12.73 |               9.83 |               58.72 |           0.61 |
+| United States  |             2.16 |            2.95 |               4.2  |              115.79 |           0.34 |
+| United Kingdom |             1.39 |            3.88 |               4.75 |              130.74 |           0.18 |
+| Germany        |             0.24 |            2.17 |               3.71 |               20.85 |          -0.15 |
 | Japan          |             1.19 |            3.17 |               2.45 |              nan    |          -0.29 |
-| France         |             0.84 |            0.94 |               7.54 |              nan    |          -0.32 |
-| Spain          |             2.82 |            2.7  |              10.38 |              105.64 |          -0.33 |
+| France         |             0.84 |            0.94 |               7.54 |              nan    |          -0.31 |
+| Spain          |             2.82 |            2.67 |              10.38 |              105.64 |          -0.33 |
 | Italy          |             0.54 |            1.53 |               6.39 |               77.29 |          -0.36 |
-| Poland         |             3.57 |            3.81 |               2.98 |               60.45 |          -0.44 |
-| Turkiye        |             3.6  |           34.88 |               8.52 |               26.62 |          -0.49 |
+| Turkiye        |             3.6  |           34.88 |               8.52 |               25.51 |          -0.43 |
+| Poland         |             3.57 |            3.81 |               2.98 |               60.45 |          -0.43 |
 
 ## UK policy rate (experimental source)
 *Source: Bank of England IADB — Official Bank Rate (IUDBEDR)*
 
 ![Policy rates](policy_rates.png)
 
-- Latest Bank Rate: **3.75%** as of 2026-10-07 (6763 observations since 2000-01-04)
+- Latest Bank Rate: **3.75%** as of 2026-10-08 (6764 observations since 2000-01-04)
 
 ## IMF monthly CPI (second SDMX provider)
 *Source: IMF Data (data.imf.org), CPI dataset — monthly headline CPI index*
@@ -150,7 +150,7 @@
 ## National Bank of Ukraine
 *Source: NBU open data API — official UAH/USD rate. The one economy in the panel under acute stress, so it anchors the high end of the stress-index scale.*
 
-- Latest official UAH/USD: **44.85** as of 2026-10-09 (4300 observations since 2015-01-01)
+- Latest official UAH/USD: **44.89** as of 2026-10-12 (4303 observations since 2015-01-01)
 - Money supply M3: **+15.6% YoY** as of 2026-09-01
 
 ![Ukraine](nbu_ukraine.png)
@@ -209,16 +209,16 @@
 
 **10Y-3M spread — illustrative 5-step nowcast** (Holt exponential smoothing):
 
-- last actual: **106.0 bp** (2026-10-07)
-- 5-step forecast: **115.47 bp** (95% band 83.77 … 147.17)
+- last actual: **99.0 bp** (2026-10-08)
+- 5-step forecast: **111.89 bp** (95% band 80.18 … 143.59)
 - in-sample RMSE 7.23 vs naive-model RMSE 5.39 — the smoother barely beats naive; treat as illustrative.
 
 *Not a trading model — a workflow demo with an explicit naive benchmark.*
 
 **EUR/USD — illustrative 5-step nowcast** (Holt exponential smoothing):
 
-- last actual: **1.12 ** (2026-10-07)
-- 5-step forecast: **1.11 ** (95% band 1.08 … 1.14)
+- last actual: **1.12 ** (2026-10-08)
+- 5-step forecast: **1.11 ** (95% band 1.07 … 1.14)
 - in-sample RMSE 0.01 vs naive-model RMSE 0.01 — the smoother barely beats naive; treat as illustrative.
 
 *Not a trading model — a workflow demo with an explicit naive benchmark.*
@@ -247,11 +247,11 @@
 
 |                        |   CAGR_pct |   ann_vol_pct |   sharpe |   max_drawdown_pct |   total_return_pct |
 |:-----------------------|-----------:|--------------:|---------:|-------------------:|-------------------:|
-| curve-signal strategy  |       0.63 |          6.02 |     0.13 |             -25.28 |               7.62 |
-| buy & hold 10Y (proxy) |       0.04 |          7.57 |     0.04 |             -28.61 |               0.49 |
-| cash (3M bills)        |       2.19 |          0.12 |    17.47 |               0    |              28.71 |
+| curve-signal strategy  |       0.68 |          6.02 |     0.14 |             -25.28 |               8.23 |
+| buy & hold 10Y (proxy) |       0.09 |          7.57 |     0.05 |             -28.61 |               1.05 |
+| cash (3M bills)        |       2.19 |          0.12 |    17.48 |               0    |              28.73 |
 
-- Sample: 2942 trading days; time in cash: **25.1%**
+- Sample: 2943 trading days; time in cash: **25.1%**
 
 ## Real (PPP-adjusted) exchange rates
 *ECB nominal rates deflated by relative CPI (World Bank), Germany as euro-area proxy. The gap between nominal and real change is the two economies' inflation differential.*
@@ -269,21 +269,21 @@
 ## Debt sustainability — the r vs g check
 *World Bank data. Screening heuristic only: no primary-balance path or maturity structure. r > g with high debt = the ratio snowballs without surpluses.*
 
-| country        |   govt_debt_gdp_pct |   gdp_growth_pct |   real_interest_pct |   r_minus_g_pp | verdict                       |
-|:---------------|--------------------:|-----------------:|--------------------:|---------------:|:------------------------------|
-| United Kingdom |               130.7 |              1.4 |                -1.1 |           -2.5 | g>r — growing out             |
-| United States  |               115.8 |              2.2 |                -1.3 |           -3.5 | g>r — growing out             |
-| Spain          |               105.6 |              2.8 |               nan   |          nan   | insufficient data             |
-| Italy          |                77.3 |              0.5 |                 2   |            1.5 | snowball risk (r>g, debt>60%) |
-| Poland         |                60.5 |              3.6 |               nan   |          nan   | insufficient data             |
-| Ukraine        |                58.7 |              1.8 |                 4.6 |            2.8 | r>g — watch                   |
-| Turkiye        |                26.6 |              3.6 |               nan   |          nan   | insufficient data             |
-| Germany        |                20.9 |              0.2 |               nan   |          nan   | insufficient data             |
-| France         |               nan   |              0.8 |               nan   |          nan   | insufficient data             |
-| Japan          |               nan   |              1.2 |                 1   |           -0.2 | g>r — growing out             |
+| country        |   govt_debt_gdp_pct |   gdp_growth_pct |   real_interest_pct |   r_minus_g_pp | verdict           |
+|:---------------|--------------------:|-----------------:|--------------------:|---------------:|:------------------|
+| United Kingdom |               130.7 |              1.4 |                -1.1 |           -2.5 | g>r — growing out |
+| United States  |               115.8 |              2.2 |                -1.3 |           -3.5 | g>r — growing out |
+| Spain          |               105.6 |              2.8 |               nan   |          nan   | insufficient data |
+| Italy          |                77.3 |              0.5 |                -1.3 |           -1.8 | g>r — growing out |
+| Poland         |                60.5 |              3.6 |               nan   |          nan   | insufficient data |
+| Ukraine        |                58.7 |              1.8 |                 4.6 |            2.8 | r>g — watch       |
+| Turkiye        |                25.5 |              3.6 |               nan   |          nan   | insufficient data |
+| Germany        |                20.9 |              0.2 |               nan   |          nan   | insufficient data |
+| France         |               nan   |              0.8 |               nan   |          nan   | insufficient data |
+| Japan          |               nan   |              1.2 |                 1   |           -0.2 | g>r — growing out |
 
 ## Run history (DuckDB)
-*22 metrics appended this run; 59 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
+*22 metrics appended this run; 60 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
 
 ![Stress history](stress_history.png)
 
