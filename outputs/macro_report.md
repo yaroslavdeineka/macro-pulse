@@ -45,18 +45,18 @@
 
 | currency   |   obs | first      | last       |   latest_rate |   period_change_pct |   ann_vol_30d_pct |   max_drawdown_pct |   level_zscore |
 |:-----------|------:|:-----------|:-----------|--------------:|--------------------:|------------------:|-------------------:|---------------:|
-| CHF        |  3015 | 2015-01-02 | 2026-10-12 |        0.9312 |              -22.54 |              6.54 |             -25.07 |          -1.44 |
-| CZK        |  3015 | 2015-01-02 | 2026-10-12 |       24.391  |              -11.92 |              1.84 |             -18.07 |          -1.11 |
-| GBP        |  3015 | 2015-01-02 | 2026-10-12 |        0.8448 |                8.31 |              3.04 |             -11.4  |          -0.15 |
-| HUF        |  3015 | 2015-01-02 | 2026-10-12 |      365.13   |               14.55 |              6.94 |             -18.84 |           0.39 |
-| JPY        |  3015 | 2015-01-02 | 2026-10-12 |      177.33   |               22.12 |              8.72 |             -23.44 |           1.85 |
-| NOK        |  3015 | 2015-01-02 | 2026-10-12 |       10.6955 |               18.29 |              4.81 |             -22.93 |           0.4  |
-| PLN        |  3015 | 2015-01-02 | 2026-10-12 |        4.385  |                1.85 |              3.4  |             -16.59 |           0.09 |
-| SEK        |  3015 | 2015-01-02 | 2026-10-12 |       11.1965 |               18.23 |              4.02 |             -12.24 |           1.05 |
-| TRY        |  3015 | 2015-01-02 | 2026-10-12 |       55.1635 |             1847.04 |              4.96 |             -36.87 |           2.3  |
-| USD        |  3015 | 2015-01-02 | 2026-10-12 |        1.1181 |               -7.16 |              4.94 |             -23.44 |          -0.08 |
+| CHF        |  3016 | 2015-01-02 | 2026-10-13 |        0.9312 |              -22.54 |              6.5  |             -25.07 |          -1.44 |
+| CZK        |  3016 | 2015-01-02 | 2026-10-13 |       24.368  |              -12.01 |              1.84 |             -18.07 |          -1.13 |
+| GBP        |  3016 | 2015-01-02 | 2026-10-13 |        0.8446 |                8.28 |              3.03 |             -11.4  |          -0.15 |
+| HUF        |  3016 | 2015-01-02 | 2026-10-13 |      364.31   |               14.29 |              6.7  |             -18.84 |           0.37 |
+| JPY        |  3016 | 2015-01-02 | 2026-10-13 |      176.91   |               21.83 |              8.65 |             -23.44 |           1.83 |
+| NOK        |  3016 | 2015-01-02 | 2026-10-13 |       10.6685 |               17.99 |              4.84 |             -22.93 |           0.37 |
+| PLN        |  3016 | 2015-01-02 | 2026-10-13 |        4.3768 |                1.66 |              3.46 |             -16.59 |           0.04 |
+| SEK        |  3016 | 2015-01-02 | 2026-10-13 |       11.1698 |               17.95 |              4.09 |             -12.24 |           1.02 |
+| TRY        |  3016 | 2015-01-02 | 2026-10-13 |       55.2325 |             1849.47 |              4.99 |             -36.87 |           2.3  |
+| USD        |  3016 | 2015-01-02 | 2026-10-13 |        1.1188 |               -7.1  |              4.96 |             -23.44 |          -0.07 |
 
-- ECB deposit facility rate (latest): **2.50%** as of 2026-10-12
+- ECB deposit facility rate (latest): **2.50%** as of 2026-10-13
 
 ## Cross-country macro scorecard
 *Source: World Bank — World Development Indicators (1990:2026); z-scores vs each country's own history*
@@ -81,7 +81,7 @@
 
 ![Policy rates](policy_rates.png)
 
-- Latest Bank Rate: **3.75%** as of 2026-10-09 (6765 observations since 2000-01-04)
+- Latest Bank Rate: **3.75%** as of 2026-10-12 (6766 observations since 2000-01-04)
 
 ## IMF monthly CPI (second SDMX provider)
 *Source: IMF Data (data.imf.org), CPI dataset — monthly headline CPI index*
@@ -150,7 +150,7 @@
 ## National Bank of Ukraine
 *Source: NBU open data API — official UAH/USD rate. The one economy in the panel under acute stress, so it anchors the high end of the stress-index scale.*
 
-- Latest official UAH/USD: **44.96** as of 2026-10-13 (4304 observations since 2015-01-01)
+- Latest official UAH/USD: **45.08** as of 2026-10-14 (4305 observations since 2015-01-01)
 - Money supply M3: **+15.6% YoY** as of 2026-09-01
 
 ![Ukraine](nbu_ukraine.png)
@@ -217,7 +217,7 @@
 
 **EUR/USD — illustrative 5-step nowcast** (Holt exponential smoothing):
 
-- last actual: **1.12 ** (2026-10-12)
+- last actual: **1.12 ** (2026-10-13)
 - 5-step forecast: **1.11 ** (95% band 1.07 … 1.14)
 - in-sample RMSE 0.01 vs naive-model RMSE 0.01 — the smoother barely beats naive; treat as illustrative.
 
@@ -283,7 +283,7 @@
 | Japan          |               nan   |              1.2 |                 1   |           -0.2 | g>r — growing out |
 
 ## Run history (DuckDB)
-*22 metrics appended this run; 61 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
+*22 metrics appended this run; 62 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
 
 ![Stress history](stress_history.png)
 
