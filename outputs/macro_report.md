@@ -1,14 +1,14 @@
 # Macro Pulse — monitor report
 
 ## US Treasury yield curve
-*Source: U.S. Department of the Treasury — daily par yield curve (2015-01-02 → 2026-10-30, 2959 trading days)*
+*Source: U.S. Department of the Treasury — daily par yield curve (2015-01-02 → 2026-11-02, 2960 trading days)*
 
 ![Yield curve](yield_curve.png)
 
 ![Curve surface](curve_heatmap.png)
 
-- Latest 10Y−3M spread: **78 bp**
-- Latest 10Y−2Y spread: **38 bp**
+- Latest 10Y−3M spread: **70 bp**
+- Latest 10Y−2Y spread: **32 bp**
 
 **Inversion episodes detected (10Y−3M):**
 
@@ -56,7 +56,7 @@
 | TRY        |  3030 | 2015-01-02 | 2026-11-02 |       56.0442 |             1878.12 |              5.35 |             -36.87 |           2.31 |
 | USD        |  3030 | 2015-01-02 | 2026-11-02 |        1.1216 |               -6.87 |              5.11 |             -23.44 |          -0.02 |
 
-- ECB deposit facility rate (latest): **2.50%** as of 2026-11-02
+- ECB deposit facility rate (latest): **2.50%** as of 2026-11-03
 
 ## Cross-country macro scorecard
 *Source: World Bank — World Development Indicators (1990:2026); z-scores vs each country's own history*
@@ -81,7 +81,7 @@
 
 ![Policy rates](policy_rates.png)
 
-- Latest Bank Rate: **3.75%** as of 2026-10-30 (6780 observations since 2000-01-04)
+- Latest Bank Rate: **3.75%** as of 2026-11-02 (6781 observations since 2000-01-04)
 
 ## IMF monthly CPI (second SDMX provider)
 *Source: IMF Data (data.imf.org), CPI dataset — monthly headline CPI index*
@@ -150,7 +150,7 @@
 ## National Bank of Ukraine
 *Source: NBU open data API — official UAH/USD rate. The one economy in the panel under acute stress, so it anchors the high end of the stress-index scale.*
 
-- Latest official UAH/USD: **45.53** as of 2026-11-03 (4325 observations since 2015-01-01)
+- Latest official UAH/USD: **45.67** as of 2026-11-04 (4326 observations since 2015-01-01)
 - Money supply M3: **+14.6% YoY** as of 2026-10-01
 
 ![Ukraine](nbu_ukraine.png)
@@ -182,6 +182,7 @@
 | FOMC           | 2026-06-17 |    70    |   65    |  -5    |
 | FOMC           | 2026-07-29 |    73    |   79    |   6    |
 | FOMC           | 2026-09-16 |    89    |   79    | -10    |
+| FOMC           | 2026-10-28 |    78    |   70    |  -8    |
 | ECB vs EUR/USD | 2024-01-25 |    90.43 |   90.06 |  -0.37 |
 | ECB vs EUR/USD | 2024-03-07 |    90.06 |   90.64 |   0.58 |
 | ECB vs EUR/USD | 2024-04-11 |    89.87 |   88.33 |  -1.54 |
@@ -209,8 +210,8 @@
 
 **10Y-3M spread — illustrative 5-step nowcast** (Holt exponential smoothing):
 
-- last actual: **78.0 bp** (2026-10-30)
-- 5-step forecast: **72.94 bp** (95% band 41.21 … 104.67)
+- last actual: **70.0 bp** (2026-11-02)
+- 5-step forecast: **68.88 bp** (95% band 37.15 … 100.61)
 - in-sample RMSE 7.24 vs naive-model RMSE 5.39 — the smoother barely beats naive; treat as illustrative.
 
 *Not a trading model — a workflow demo with an explicit naive benchmark.*
@@ -247,11 +248,11 @@
 
 |                        |   CAGR_pct |   ann_vol_pct |   sharpe |   max_drawdown_pct |   total_return_pct |
 |:-----------------------|-----------:|--------------:|---------:|-------------------:|-------------------:|
-| curve-signal strategy  |       0.92 |          6.04 |     0.18 |             -25.28 |              11.3  |
-| buy & hold 10Y (proxy) |       0.33 |          7.57 |     0.08 |             -28.61 |               3.92 |
-| cash (3M bills)        |       2.2  |          0.12 |    17.56 |               0    |              29.06 |
+| curve-signal strategy  |       0.94 |          6.04 |     0.19 |             -25.28 |              11.62 |
+| buy & hold 10Y (proxy) |       0.35 |          7.57 |     0.08 |             -28.61 |               4.22 |
+| cash (3M bills)        |       2.2  |          0.12 |    17.56 |               0    |              29.08 |
 
-- Sample: 2958 trading days; time in cash: **24.9%**
+- Sample: 2959 trading days; time in cash: **24.9%**
 
 ## Real (PPP-adjusted) exchange rates
 *ECB nominal rates deflated by relative CPI (World Bank), Germany as euro-area proxy. The gap between nominal and real change is the two economies' inflation differential.*
@@ -283,7 +284,7 @@
 | Japan          |               nan   |              1.2 |                 1   |           -0.2 | g>r — growing out |
 
 ## Run history (DuckDB)
-*22 metrics appended this run; 76 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
+*22 metrics appended this run; 77 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
 
 ![Stress history](stress_history.png)
 
