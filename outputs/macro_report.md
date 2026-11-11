@@ -1,14 +1,14 @@
 # Macro Pulse — monitor report
 
 ## US Treasury yield curve
-*Source: U.S. Department of the Treasury — daily par yield curve (2015-01-02 → 2026-11-09, 2965 trading days)*
+*Source: U.S. Department of the Treasury — daily par yield curve (2015-01-02 → 2026-11-10, 2966 trading days)*
 
 ![Yield curve](yield_curve.png)
 
 ![Curve surface](curve_heatmap.png)
 
-- Latest 10Y−3M spread: **64 bp**
-- Latest 10Y−2Y spread: **32 bp**
+- Latest 10Y−3M spread: **68 bp**
+- Latest 10Y−2Y spread: **25 bp**
 
 **Inversion episodes detected (10Y−3M):**
 
@@ -56,7 +56,7 @@
 | TRY        |  3036 | 2015-01-02 | 2026-11-10 |       56.3207 |             1887.88 |              5.75 |             -36.87 |           2.32 |
 | USD        |  3036 | 2015-01-02 | 2026-11-10 |        1.1214 |               -6.88 |              5.74 |             -23.44 |          -0.02 |
 
-- ECB deposit facility rate (latest): **2.50%** as of 2026-11-10
+- ECB deposit facility rate (latest): **2.50%** as of 2026-11-11
 
 ## Cross-country macro scorecard
 *Source: World Bank — World Development Indicators (1990:2026); z-scores vs each country's own history*
@@ -81,7 +81,7 @@
 
 ![Policy rates](policy_rates.png)
 
-- Latest Bank Rate: **4.00%** as of 2026-11-09 (6786 observations since 2000-01-04)
+- Latest Bank Rate: **4.00%** as of 2026-11-10 (6787 observations since 2000-01-04)
 
 ## IMF monthly CPI (second SDMX provider)
 *Source: IMF Data (data.imf.org), CPI dataset — monthly headline CPI index*
@@ -94,7 +94,7 @@
 | GBR   |           3.7 | 2026-09-01 |
 | ITA   |           4.2 | 2026-09-01 |
 | JPN   |           2.2 | 2026-09-01 |
-| POL   |           3.2 | 2026-08-01 |
+| POL   |           3.9 | 2026-09-01 |
 | TUR   |          29.7 | 2026-09-01 |
 | UKR   |          10   | 2026-09-01 |
 | USA   |           4   | 2026-09-01 |
@@ -138,19 +138,19 @@
 
 | geo   |      cli | signal      | as_of      |
 |:------|---------:|:------------|:-----------|
-| GBR   | 101.376  | above trend | 2026-09-01 |
-| JPN   | 100.347  | above trend | 2026-09-01 |
-| ITA   | 100.302  | above trend | 2026-09-01 |
-| FRA   | 100.664  | above trend | 2026-09-01 |
-| ESP   |  99.5776 | below trend | 2026-09-01 |
-| DEU   | 101.007  | above trend | 2026-09-01 |
-| TUR   | 100.727  | above trend | 2026-09-01 |
-| USA   | 100.999  | above trend | 2026-09-01 |
+| GBR   | 101.426  | above trend | 2026-10-01 |
+| JPN   | 100.21   | above trend | 2026-10-01 |
+| ITA   | 100.043  | above trend | 2026-10-01 |
+| FRA   | 100.731  | above trend | 2026-10-01 |
+| ESP   |  99.3528 | below trend | 2026-10-01 |
+| DEU   | 101.161  | above trend | 2026-10-01 |
+| TUR   | 100.873  | above trend | 2026-10-01 |
+| USA   | 100.957  | above trend | 2026-10-01 |
 
 ## National Bank of Ukraine
 *Source: NBU open data API — official UAH/USD rate. The one economy in the panel under acute stress, so it anchors the high end of the stress-index scale.*
 
-- Latest official UAH/USD: **45.50** as of 2026-11-11 (4333 observations since 2015-01-01)
+- Latest official UAH/USD: **45.32** as of 2026-11-12 (4334 observations since 2015-01-01)
 - Money supply M3: **+14.6% YoY** as of 2026-10-01
 
 ![Ukraine](nbu_ukraine.png)
@@ -211,8 +211,8 @@
 
 **10Y-3M spread — illustrative 5-step nowcast** (Holt exponential smoothing):
 
-- last actual: **64.0 bp** (2026-11-09)
-- 5-step forecast: **58.22 bp** (95% band 26.51 … 89.93)
+- last actual: **68.0 bp** (2026-11-10)
+- 5-step forecast: **58.52 bp** (95% band 26.81 … 90.22)
 - in-sample RMSE 7.23 vs naive-model RMSE 5.39 — the smoother barely beats naive; treat as illustrative.
 
 *Not a trading model — a workflow demo with an explicit naive benchmark.*
@@ -249,11 +249,11 @@
 
 |                        |   CAGR_pct |   ann_vol_pct |   sharpe |   max_drawdown_pct |   total_return_pct |
 |:-----------------------|-----------:|--------------:|---------:|-------------------:|-------------------:|
-| curve-signal strategy  |       0.97 |          6.04 |     0.19 |             -25.28 |              12.03 |
-| buy & hold 10Y (proxy) |       0.38 |          7.57 |     0.09 |             -28.61 |               4.6  |
-| cash (3M bills)        |       2.2  |          0.12 |    17.59 |               0    |              29.18 |
+| curve-signal strategy  |       0.89 |          6.04 |     0.18 |             -25.28 |              11.04 |
+| buy & hold 10Y (proxy) |       0.31 |          7.57 |     0.08 |             -28.61 |               3.68 |
+| cash (3M bills)        |       2.2  |          0.12 |    17.6  |               0    |              29.21 |
 
-- Sample: 2964 trading days; time in cash: **24.9%**
+- Sample: 2965 trading days; time in cash: **24.9%**
 
 ## Real (PPP-adjusted) exchange rates
 *ECB nominal rates deflated by relative CPI (World Bank), Germany as euro-area proxy. The gap between nominal and real change is the two economies' inflation differential.*
@@ -285,7 +285,7 @@
 | Japan          |               nan   |              1.2 |                 1   |           -0.2 | g>r — growing out |
 
 ## Run history (DuckDB)
-*22 metrics appended this run; 82 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
+*22 metrics appended this run; 83 runs recorded in `data/history.duckdb`. Each refresh appends a dated snapshot rather than overwriting the last one.*
 
 ![Stress history](stress_history.png)
 
