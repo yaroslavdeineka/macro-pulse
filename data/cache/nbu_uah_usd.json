@@ -13001,4 +13001,7 @@
 ,{ 
 "exchangedate":"12.11.2026","r030":840,"cc":"USD","txt":"Долар США","enname":"US Dollar","rate":45.3222,"units":1,"rate_per_unit":45.3222,"group":"1","calcdate":"11.11.2026","special":"N"
  }
+,{ 
+"exchangedate":"13.11.2026","r030":840,"cc":"USD","txt":"Долар США","enname":"US Dollar","rate":45.3849,"units":1,"rate_per_unit":45.3849,"group":"1","calcdate":"12.11.2026","special":"N"
+ }
 ]
